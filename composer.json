@@ -1,5 +1,5 @@
 {
-    "name": "nfephp-org/sped-common",
+    "name": "tiagovb/sped-common-php5",
     "type": "library",
     "description": "sped-common é parte do projeto NFePHP.",
     "keywords": [
@@ -57,19 +57,6 @@
         "psr-4": {
             "NFePHP\\Common\\Tests\\": "tests/"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-v5.0": "5.0-dev"
-        }
-    },
-    "minimum-stability": "stable",
-    "scripts": {
-        "test": "phpunit",
-        "phpcs": "./vendor/bin/phpcs src/",
-        "phpcbf": "./vendor/bin/phpcbf src/",
-        "stan": "phpstan analyse src/",
-        "stan80": "phpstan analyse src/ -c phpstan80.neon",
-        "stan81": "phpstan analyse src/ -c phpstan81.neon"
     }
+    "minimum-stability": "stable"
 }
