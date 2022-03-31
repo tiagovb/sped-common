@@ -58,5 +58,5 @@
             "NFePHP\\Common\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
