@@ -180,7 +180,7 @@ class DOMImproved extends DOMDocument
         } elseif ($obrigatorio && ($content === null || $content === '') && !$force) {
             $this->errors[] = "Preenchimento Obrigatório! [$name] $descricao";
         }
-        $content = (string) $content;
+        $content = is_float($content) ? str_replace(',', '.', $content) : (string)$content;
         $content = trim($content);
         if ($obrigatorio || $content !== '' || $force) {
             $temp = $this->createElement($name, $content);
