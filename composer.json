@@ -57,6 +57,5 @@
         "psr-4": {
             "NFePHP\\Common\\Tests\\": "tests/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
