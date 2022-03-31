@@ -104,11 +104,11 @@ class DOMImproved extends DOMDocument
 
     /**
      * getValue
-     * @param ?DOMElement $node
+     * @param DOMElement $node
      * @param string $name
      * @return string
      */
-    public function getValue(?DOMElement $node, $name)
+    public function getValue(DOMElement $node, $name)
     {
         if (empty($node)) {
             return '';
@@ -269,7 +269,7 @@ class DOMImproved extends DOMDocument
      * @param array $arr
      * @return int
      */
-    public function addArrayChild(?DOMElement &$parent, $arr)
+    public function addArrayChild(DOMElement &$parent, $arr)
     {
         $num = 0;
         if (!empty($arr) && !empty($parent)) {

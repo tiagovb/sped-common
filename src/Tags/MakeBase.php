@@ -152,7 +152,7 @@ abstract class MakeBase
             $this->ide->std->cnf
         );
         $infid = str_replace($this->rootname, '', $this->infnfe->std->id);
-        if ($buildId != $infId) {
+        if ($buildId != $infid) {
             $this->infnfe->std->id = "{$this->rootname}{$buildId}";
             $this->ide->std->cdv = substr($buildId, -1);
         }

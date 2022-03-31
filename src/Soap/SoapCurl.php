@@ -15,7 +15,6 @@
 
 namespace NFePHP\Common\Soap;
 
-use CurlHandle;
 use NFePHP\Common\Soap\SoapBase;
 use NFePHP\Common\Soap\SoapInterface;
 use NFePHP\Common\Exception\SoapException;
@@ -159,7 +158,7 @@ class SoapCurl extends SoapBase implements SoapInterface
 
     /**
      * Set proxy into cURL parameters
-     * @param resource|CurlHandle $oCurl
+     * @param resource $oCurl
      */
     private function setCurlProxy(&$oCurl)
     {

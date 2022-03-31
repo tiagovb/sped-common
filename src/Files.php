@@ -86,7 +86,7 @@ class Files
      * @param string $folder
      * @return array
      */
-    public function listContents(string $folder = '')
+    public function listContents($folder = '')
     {
         $new = [];
         if (is_dir($this->path . DIRECTORY_SEPARATOR . $folder)) {

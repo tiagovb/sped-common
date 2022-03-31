@@ -250,7 +250,7 @@ abstract class SoapBase implements SoapInterface
      */
     public function setTemporaryFolder($folderRealPath = null)
     {
-        $mapto = $this->certificate->getCnpj() ?? $this->certificate->getCpf();
+        $mapto = $this->certificate->getCnpj() ? $this->certificate->getCnpj() : $this->certificate->getCpf();
         if (empty($mapto)) {
             throw new RuntimeException(
                 'Foi impossivel identificar o OID do CNPJ ou do CPF.'
@@ -573,7 +573,7 @@ abstract class SoapBase implements SoapInterface
                     }
                 }
             }
-        } catch (\Throwable $e) {
+        } catch (\Exception $e) {
             //impedir de ocorrer exception em ambientes muito comporrentes
             //porem nesses casos devem ser feitas limpezas periodicas caso
             //não seja usado o diretorio /tmp pois não será auto limpante

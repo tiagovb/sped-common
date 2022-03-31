@@ -59,7 +59,7 @@ class ExceptionCollection extends \Exception implements ExceptionInterface, Iter
      * Get the total number of request exceptions
      * @return int
      */
-    public function count(): int
+    public function count()
     {
         return count($this->exceptions);
     }
@@ -68,7 +68,7 @@ class ExceptionCollection extends \Exception implements ExceptionInterface, Iter
      * Allows array-like iteration over the request exceptions
      * @return \ArrayIterator
      */
-    public function getIterator(): Traversable
+    public function getIterator()
     {
         return new \ArrayIterator($this->exceptions);
     }
