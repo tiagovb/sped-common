@@ -11,7 +11,7 @@ class PublicKeyTest extends \PHPUnit\Framework\TestCase
 
     protected $key;
 
-    public function setUp(): void
+    public function setUp()
     {
         $this->key = new PublicKey(file_get_contents(__DIR__ . self::TEST_PUBLIC_KEY));
     }
